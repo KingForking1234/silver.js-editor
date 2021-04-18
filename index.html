@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--credit to levethatan for the main code adapted from khanhub. with fll credit plz no flag sil vous plait -->
+	<meta charset="utf-8">
+	<title>Silver.js Editor</title>
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="overflow:hidden;">
+	<script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.js" type="text/javascript">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/mode-html.min.js">
+	</script>
+	<div>
+	<h1 id="program-title"></h1>
+	<div id="editor-wrapper">
+		<div id="editor" onkeyup="updatePreview()"></div>
+		<div id="result"></div>
+		<div id="option-bar">
+			<select id="choose-theme">
+				<option value="nord_dark">
+					Choose Theme: default
+				</option>
+				<option value="ambiance">
+					ambiance
+				</option>
+				<option value="chaos">
+					chaos
+				</option>
+				<option value="chrome">
+					chrome
+				</option>
+				<option value="clouds">
+					clouds
+				</option>
+				<option value="clouds_midnight">
+					clouds midnight
+				</option>
+				<option value="cobalt">
+					cobalt
+				</option>
+				<option value="crimson_editor">
+					crimson editor
+				</option>
+				<option value="dawn">
+					dawn
+				</option>
+				<option value="dracula">
+					dracula
+				</option>
+				<option value="eclipse">
+					eclipse
+				</option>
+				<option value="github">
+					github
+				</option>
+				<option value="gob">
+					gob
+				</option>
+				<option value="gruvbox">
+					gruvbox
+				</option>
+				<option value="idle_fingers">
+					idle_fingers
+				</option>
+				<option value="iplastic">
+					iplastic
+				</option>
+				<option value="katzenmilch">
+					katzenmilch
+				</option>
+				<option value="kr_theme">
+					kr_theme
+				</option>
+				<option value="kuroir">
+					kuroir
+				</option>
+				<option value="merbivore">
+					merbivore
+				</option>
+				<option value="merbivore_soft">
+					mervibore_soft
+				</option>
+				<option value="mono_industrial">
+					mono industrial
+				</option>
+				<option value="monokai">
+					monokai
+				</option>
+				<option value="nord_dark">
+					nord_dark
+				</option>
+				<option value="pastel_on_dark">
+					pastel on dark
+				</option>
+				<option value="solarized_dark">
+					solarized dark
+				</option>
+				<option value="solarized_light">
+					solarized_light
+				</option>
+				<option value="sqlserver">
+					sqlserver
+				</option>
+				<option value="terminal">
+					terminal
+				</option>
+				<option value="textmate">
+					textmate
+				</option>
+				<option value="tomorrow">
+					tomorrow
+				</option>
+				<option value="tomorrow_night">
+					tomorrow_night
+				</option>
+				<option value="tomorrow_night_blue">
+					tomorrow night blue
+				</option>
+				<option value="tomorrow_night_bright">
+					tomorrow night bright
+				</option>
+				<option value="tomorrow_night_eighties">
+					tomorrow night 80s
+				</option>
+				<option value="twilight">
+					twilight
+				</option>
+				<option value="vibrant_ink">
+					vibrant ink
+				</option>
+				<option value="xcode">
+					xcode
+				</option>
+			</select>
+			<div id="button-wrapper">
+				<button class="option" id="save-button" onclick="saveProgram()">Save</button> <button class="option" id="run-program" onclick="updatePreview()">Run</button> <button class="option" id="live-preview" onclick="live_preview()">Live Preview</button> <button class="option" id="deploy-site" onclick="deploy_site()">Deploy</button>
+			</div>
+		</div>
+	</div>
+	<div id="cwall"></div>
+	<div id="dropdown-deploy">
+		<p>Copy all of this code and paste it into a KA Webpage Program. You can modify the screenshot to whatever you want. Screenshot modification Details will not be listed here.</p>
+		<textarea id="deployment-clipboard" readonly></textarea> <button id="copy-button" onclick="copyToClipboard()">Copy to Clipboard</button> <button id="close-deploy" onclick="hideDeploy()">✖︎</button>
+	</div>
+	</div>
+	<script src="script1.js">
+	  
+	</script>
+
+
+</body>
+</html>
