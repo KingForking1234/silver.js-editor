@@ -1,4 +1,4 @@
- /****************************************
+   /****************************************
    * Import Ace Themes
    *****************************************/
   var themes = ["textmate", "ambiance", "chaos", "chrome", "clouds", "clouds_midnight", "cobalt", "crimson_editor", "dawn", "dracula", "eclipse", "github", "gob", "gruvbox", "idle_fingers", "iplastic", "katzenmilch", "kr_theme", "kuroir", "merbivore", "merbivore_soft", "mono_industrial", "monokai", "nord_dark", "pastel_on_dark", "solarized_dark", "solarized_light", "sqlserver", "terminal", "textmate", "tomorrow", "tomorrow_night", "tomorrow_night_blue", "tomorrow_night_bright", "tomorrow_night_eighties", "twilight", "vibrant_ink", "xcode"];
@@ -17,7 +17,7 @@
   var e = document.querySelector("#editor");
   var editor = ace.edit(e);
   var live_window;
-  var scenes = ["Home", "About", "Projects", "Guide", "Credits", "Editor"];
+  var scenes = ["Editor"];
   var transDir = 2;
   var specialWord = "script";
   var defaultWebpageContent = `<!DOCTYPE html>
@@ -27,7 +27,16 @@
 	       <title>New webpage</title>
 	   </head>
 	   <body>
-            
+	   <!--
+	   view our documentation here https://www.khanacademy.org/computer-programming/silverjs-documenation/6486867988922368
+	   -->
+         <script src="https://cdn.jsdelivr.net/gh/squirrelstudios0/Silver.js/silver.js"><'+'/script>
+      <script>
+      //our code goes here
+      //remove the '+' in the script tag
+      
+      
+      <'+'/script>   
 	   </body>
 	</html>`;
   /****************************************
