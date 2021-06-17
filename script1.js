@@ -20,25 +20,7 @@
   var scenes = ["Editor"];
   var transDir = 2;
   var specialWord = "script";
-  var defaultWebpageContent = `<!DOCTYPE html>
-	<html>
-	   <head>
-	       <meta charset="utf-8">
-	       <title>New webpage</title>
-	   </head>
-	   <body>
-	   <!--
-	   view our documentation here https://www.khanacademy.org/computer-programming/silverjs-documenation/6486867988922368
-	   -->
-         <script src="https://cdn.jsdelivr.net/gh/squirrelstudios0/Silver.js/silver.js"><'+'/script>
-      <script>
-      //our code goes here
-      //remove the '+' in the script tag
-      
-      
-      <'+'/script>   
-	   </body>
-	</html>`;
+  var defaultWebpageContent = document.getElementById("hi").value;
   /****************************************
    * Helper Functions
    *****************************************/
